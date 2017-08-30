@@ -1,7 +1,7 @@
 {
-  "name": "basic-react-bp",
+  "name": "list-editor",
   "version": "1.0.0",
-  "description": "Basic react boiler with jest.",
+  "description": "A minimal react/redux list editor app.",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -32,11 +32,19 @@
   },
   "dependencies": {
     "enzyme": "^2.9.1",
+    "faker": "^4.1.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-hot-loader": "3.0.0-beta.6",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-batched-actions": "^0.1.6",
+    "redux-form": "^7.0.3",
+    "redux-thunk": "^2.2.0",
+    "shortid": "^2.2.8",
+    "styled-components": "^2.1.2",
     "webpack": "^3.2.0"
   },
   "jest": {

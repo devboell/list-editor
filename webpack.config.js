@@ -1,7 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -53,13 +52,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
-    new CopyWebpackPlugin([
-      { from: 'images', to: 'images' },
-    ]),
   ],
 
   resolve: {
-    modules: ['src', 'src/images', 'node_modules'],
+    modules: ['src', 'src/components', 'src/containers', 'node_modules'],
     extensions: [
       '.js',
       '.jsx',
